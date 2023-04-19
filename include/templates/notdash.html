@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+    <body>
+        <h1>Hello Plotly (but not Dash)</h1>
+        <div id='chart' class="chart"></div>
+    </body>
+
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type="text/javascript">
+    var graphs = {{graphJSON | safe}}; /* Sets a variable to the imported JSON code */
+    Plotly.plot('chart', graphs, {}) /* calls the plot method from the Plotly lib to display the chart */
+</script>
+</html>
+

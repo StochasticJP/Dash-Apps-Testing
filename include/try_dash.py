@@ -1,5 +1,5 @@
 import dash
-from dash import html, dcc
+from dash import html, dcc  # dcc = dash_core_components / html = dash_html_components
 import plotly.graph_objects as go
 import plotly.express as px
 from dash.dependencies import Input, Output
